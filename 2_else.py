@@ -22,3 +22,11 @@
 # Attempt finished.
 
 # write your code here:
+try:
+    integer=int(input("Integer: "))
+except ValueError:
+    print("Only numeric values are allowed.")
+else:
+    print("Conversion successful!")
+finally:
+    print("Attempt finished.")

@@ -25,3 +25,15 @@
 # Operation finished.
 
 # write your code here:
+try:
+    numerator = float(input("Type a numerator: "))
+    denominator = float(input("Type a denominator: "))
+    numerator/denominator
+except ValueError:
+    print("Only numeric values are allowed.")
+except ZeroDivisionError:
+    print("Division by zero is not allowed")
+else:
+    print(f"Division was successful.\nThe result of it was {numerator/denominator}.")
+finally:
+    print("Operation finished.")
